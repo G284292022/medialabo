@@ -10,6 +10,7 @@ body {
 li{
     border: solid black;
     background-color: white;
+    text-align: left;
 }
 .one{
     text-shadow: 0.02em  -0.02em 0.2em red;
