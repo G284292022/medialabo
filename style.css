@@ -2,7 +2,7 @@ body {
     background-color: rgb(255, 255, 220);
 }
 
-p {
+p.setumei {
     background: linear-gradient(90deg, rgb(206, 255, 206), rgb(255, 255, 141));
 }
 
