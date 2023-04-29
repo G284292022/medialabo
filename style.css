@@ -7,6 +7,6 @@ p {
 }
 
 li{
-    border-bottom-style: solid;
+    border: solid black;
     background-color: white;
 }
