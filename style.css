@@ -22,3 +22,7 @@ body {
 .five{
     text-shadow: 0.02em  -0.02em 0.2em rgb(137, 76, 137);
 }
+
+a:hover{
+    color: purple;
+}
