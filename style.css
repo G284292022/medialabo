@@ -5,6 +5,7 @@ body {
 .setumei {
     background: linear-gradient(90deg, rgb(206, 255, 206), rgb(255, 255, 141));
     border: solid green;
+    background-size: auto;
 }
 
 .one{
@@ -24,6 +25,6 @@ body {
 }
 
 a:hover{
-    color: blue;
+    color: green;
     text-decoration: none;
 }
