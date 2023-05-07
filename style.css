@@ -5,7 +5,7 @@ body {
 .setumei {
     background: linear-gradient(90deg, rgb(206, 255, 206), rgb(255, 255, 141));
     border: solid green;
-    background-size: 500px;
+    height: 500px;
 }
 
 .one{
