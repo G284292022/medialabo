@@ -40,7 +40,7 @@ function hantei() {
     let z1 = document.querySelector('span#result');
     let p = document.createElement('p');
     p.textContent = 'まちがい．答えはもっと大きいですよ';
-    z2.insertAdjacentElement('afterend', p);
+    z1.insertAdjacentElement('afterend', p);
   } else if(yoso > kotae){
     console.log("まちがい．答えはもっと小さいですよ");
     let z2 = document.querySelector('span#result');
