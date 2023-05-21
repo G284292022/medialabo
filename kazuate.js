@@ -37,16 +37,16 @@ function hantei() {
 
   } else if(yoso < kotae){
     console.log("まちがい．答えはもっと大きいですよ");
-    let z = document.querySelector('span#result');
+    let z1 = document.querySelector('span#result');
     let p = document.createElement('p');
     p.textContent = 'まちがい．答えはもっと大きいですよ';
-    z.insertAdjacentElement('afterend', p);
+    z2.insertAdjacentElement('afterend', p);
   } else if(yoso > kotae){
     console.log("まちがい．答えはもっと小さいですよ");
-    let z = document.querySelector('span#result');
+    let z2 = document.querySelector('span#result');
     let p = document.createElement('p');
     p.textContent = 'まちがい．答えはもっと小さいですよ';
-    z.insertAdjacentElement('afterend', p);
+    z2.insertAdjacentElement('afterend', p);
   }
 }
 if(yoso === kotae){
