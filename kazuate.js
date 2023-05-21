@@ -25,7 +25,7 @@ function hantei() {
     x.textContent = kaisu;
     let y = document.querySelector('span#answer');
     y.textContent = yoso;
-  for(; kaisu <= 2; kaisu = kaisu + 1){
+  for(; kaisu <= 1; kaisu = kaisu + 1){
     console.log(kaisu + "回目の予想: " + yoso);
     
     if(kaisu === 3) continue;
