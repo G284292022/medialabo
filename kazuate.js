@@ -27,15 +27,26 @@ function hantei() {
     x.textContent = kaisu;
     let y = document.querySelector('span#answer');
     y.textContent = yoso;
-    let z = document.querySelector('span#result');
-    z.textContent = kotae;
     if(kaisu === 3) continue;
   if(yoso === kotae){
     console.log("正解です．おめでとう!");
+    let z = document.querySelector('span#result');
+    let p = document.createElement('p');
+    p.textContent = '正解です．おめでとう!';
+    z.insertAdjacentElement('afterend', p);
+
   } else if(yoso < kotae){
     console.log("まちがい．答えはもっと大きいですよ");
+    let z = document.querySelector('span#result');
+    let p = document.createElement('p');
+    p.textContent = 'まちがい．答えはもっと大きいですよ';
+    z.insertAdjacentElement('afterend', p);
   } else if(yoso > kotae){
     console.log("まちがい．答えはもっと小さいですよ");
+    let z = document.querySelector('span#result');
+    let p = document.createElement('p');
+    p.textContent = 'まちがい．答えはもっと小さいですよ';
+    z.insertAdjacentElement('afterend', p);
   }
 }
 if(yoso === kotae){
