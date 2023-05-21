@@ -30,20 +30,20 @@ function hantei() {
     if(kaisu === 3) continue;
   if(yoso === kotae){
     console.log("正解です．おめでとう!");
-    let z = document.querySelector('span#result');
+    let z = document.querySelector('p#result');
     let p = document.createElement('p');
     p.textContent = '正解です．おめでとう!';
     z.insertAdjacentElement('afterend', p);
 
   } else if(yoso < kotae){
     console.log("まちがい．答えはもっと大きいですよ");
-    let z1 = document.querySelector('span#result');
+    let z1 = document.querySelector('p#result');
     let p = document.createElement('p');
     p.textContent = 'まちがい．答えはもっと大きいですよ';
     z1.insertAdjacentElement('afterend', p);
   } else if(yoso > kotae){
     console.log("まちがい．答えはもっと小さいですよ");
-    let z2 = document.querySelector('span#result');
+    let z2 = document.querySelector('p#result');
     let p = document.createElement('p');
     p.textContent = 'まちがい．答えはもっと小さいですよ';
     z2.insertAdjacentElement('afterend', p);
