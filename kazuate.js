@@ -21,12 +21,13 @@ function hantei() {
   // 課題3-1: 正解判定する
   // kotae と yoso が一致するかどうか調べて結果を出力
   // 課題3-1における出力先はコンソール
-  for(; kaisu <= 3; kaisu = kaisu + 1){
-    console.log(kaisu + "回目の予想: " + yoso);
-    let x = document.querySelector('span#kaisu');
+  let x = document.querySelector('span#kaisu');
     x.textContent = kaisu;
     let y = document.querySelector('span#answer');
     y.textContent = yoso;
+  for(; kaisu <= 3; kaisu = kaisu + 1){
+    console.log(kaisu + "回目の予想: " + yoso);
+    
     if(kaisu === 3) continue;
   if(yoso === kotae){
     console.log("正解です．おめでとう!");
