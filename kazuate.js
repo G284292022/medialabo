@@ -29,9 +29,6 @@ function hantei() {
     y.textContent = yoso;
     let z = document.querySelector('span#result');
     z.textContent = kotae;
-    
-     x.insertAdjacentElement('afterend','p#kresult');
-     y.insertAdjacentElement('afterend','p#kresult');
     if(kaisu === 3) continue;
   if(yoso === kotae){
     console.log("正解です．おめでとう!");
