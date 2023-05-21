@@ -9,9 +9,9 @@ let kaisu = 1;
 // 将来以下の hantei(); の4回の呼び出しを全て削除する
 // 代わりにここでは，ボタンを押したら hantei() を呼び出すイベント処理をする
 hantei();
-hantei();
-hantei();
-hantei();
+// hantei();
+// hantei();
+// hantei();
 
 // ボタンを押した後の処理をする関数 hantei() の定義
 function hantei() {
@@ -28,8 +28,8 @@ function hantei() {
     let y = document.querySelector('span#answer');
     y.textContent = yoso;
     
-    // x.insertAdjacentElement('afterend',p#kresult);
-    // y.insertAdjacentElement('afterend',p#kresult);
+     x.insertAdjacentElement('afterend','p#kresult');
+     y.insertAdjacentElement('afterend','p#kresult');
     if(kaisu === 3) continue;
   if(yoso === kotae){
     console.log("正解です．おめでとう!");
@@ -44,6 +44,7 @@ if(yoso === kotae){
 }
 else {
   console.log("まちがい．残念でした答えは "+ kotae +" です．");
+
 }
   if(kaisu === 4){
   for(; kaisu <= 7; kaisu = kaisu + 1){
