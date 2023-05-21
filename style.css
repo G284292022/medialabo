@@ -6,8 +6,9 @@ body {
     background: linear-gradient(90deg, rgb(206, 255, 206), rgb(255, 255, 141));
     border: solid green;
     padding: 10px;
-	margin: 20px;
+	margin: 0px;
     width: 1150px;
+    left: 50px;
 }
 
 .one{
