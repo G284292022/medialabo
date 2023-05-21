@@ -1,14 +1,35 @@
 body {
     background-color: rgb(255, 255, 220);
 }
+h1{
+    position: relative;
+    text-align: center;
+}
+h2{
+    position: relative;
+    text-align: center;
+}
+h3{
+    position: relative;
+    text-align: center;
+}
+p{
+    position: relative;
+    text-align: center;
+}
+li{
+    position: relative;
+    text-align: center;
+}
 
 .setumei {
     background: linear-gradient(90deg, rgb(206, 255, 206), rgb(255, 255, 141));
     border: solid green;
     padding: 10px;
-	margin: 0px;
     width: 1150px;
-    left: 50px;
+    left: 100px;
+    position: relative;
+    text-align: center;
 }
 
 .one{
