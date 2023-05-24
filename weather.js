@@ -54,5 +54,9 @@ data = {
   temp_max: 9.94
 }
 console.log(data.name+","+data.temp_max+","+data.temp_min);
+let h1 = document.querySelector('h1'); 
+let p = document.createElement('p');
+p.textContent = data.name+","+data.temp_max+","+data.temp_min; 
+h1.insertAdjacentElement('afterend',p);
 
 
