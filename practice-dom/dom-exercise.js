@@ -29,12 +29,25 @@ div.insertAdjacentElement('afterend',p);*/
 
 let human = {
 	face: ["taro.png","jiro.png", "hanako.png"]
+	 
 }
+img.src = "taro.png";
+	img.src = "jiro.png";
+	img.src = "hanako.png";
+/*
 let div = document.querySelector('div#phototable');
 for(let b of human.face){
 	let img = document.createElement('img');
-	img.setAttribute('src', human.face);
+	img.src = "img/taro.png";
+	img.setAttribute('src', 'taro.png');
 	div.insertAdjacentElement('afterend', div);
+}*/
+let div = document.querySelector('div#phototable');
+let ms = [1,2,3]
+for(let m of ms){
+	let img = document.createElement('img');
+	
+	div.insertAdjacentElement('afterend',img);
 }
 // 練習4-4 箇条書き削除プログラム
 let ul = document.querySelector('ul#location');
