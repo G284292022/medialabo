@@ -31,9 +31,6 @@ let human = {
 	face: ["taro.png","jiro.png", "hanako.png"]
 	 
 }
-img.src = "taro.png";
-	img.src = "jiro.png";
-	img.src = "hanako.png";
 /*
 let div = document.querySelector('div#phototable');
 for(let b of human.face){
@@ -46,7 +43,9 @@ let div = document.querySelector('div#phototable');
 let ms = [1,2,3]
 for(let m of ms){
 	let img = document.createElement('img');
-	
+	img.src = "taro.png";
+	img.src = "jiro.png";
+	img.src = "hanako.png";
 	div.insertAdjacentElement('afterend',img);
 }
 // 練習4-4 箇条書き削除プログラム
