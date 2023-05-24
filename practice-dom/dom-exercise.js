@@ -20,26 +20,19 @@ p.textContent = '写真表と都市の緯度経度のページです';
 x.insertAdjacentElement('afterend',p);
 x.style.textEmphasis='sesame green';
 // 練習4-3 写真表作成プログラム
-/*let div = document.querySelector('div#phototable');
-let img = document.createElement('img');
-img.setAttribute('img','taro.png');
-img.setAttribute('img','jiro.png');
-img.setAttribute('img','hanako.png');
-div.insertAdjacentElement('afterend',p);*/
 
-let human = {
-	face: ["taro.png","jiro.png", "hanako.png"]
-	 
+let ms = [1,2,3];
+ms[0] = 'taro.png';
+ms[1] = 'jiro.png';
+ms[2] = 'hanako.png';
+
+let div = document.querySelector('div#phototable');
+for(let b = 0;  b < 3; b++){
+	let img = document.createElement('img');	
+	img.setAttribute('src', ms[b]);
+	div.insertAdjacentElement('aftreend', img); 
 }
-/*
-let div = document.querySelector('div#phototable');
-for(let b of human.face){
-	let img = document.createElement('img');
-	img.src = "img/taro.png";
-	img.setAttribute('src', 'taro.png');
-	div.insertAdjacentElement('afterend', div);
-}*/
-let div = document.querySelector('div#phototable');
+/*let div = document.querySelector('div#phototable');
 let ms = [1,2,3]
 for(let m of ms){
 	let img = document.createElement('img');
@@ -47,7 +40,7 @@ for(let m of ms){
 	img.src = "jiro.png";
 	img.src = "hanako.png";
 	div.insertAdjacentElement('afterend',img);
-}
+}*/
 // 練習4-4 箇条書き削除プログラム
 let ul = document.querySelector('ul#location');
 let ns = [1,2,3]
