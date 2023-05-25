@@ -29,11 +29,11 @@ function hantei() {
     let x = document.querySelector('span#kaisu');
     let p2 = document.createElement('p');
     p2.textContent = kaisu;
-    x.insertAdjacentElement('afterend', p);
+    //x.insertAdjacentElement('afterend', p);
     let y = document.querySelector('span#answer');
     let p3 = document.createElement('p');
     p3.textContent = yoso;
-    y.insertAdjacentElement('afterend', p);
+    //y.insertAdjacentElement('afterend', p);
     
     if(kaisu === 3) continue;
   if(yoso === kotae){
