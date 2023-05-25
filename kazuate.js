@@ -16,18 +16,24 @@ b.addEventListener('click', hantei);
 function hantei() {
   // 将来ここでは 4 ではなくテキストボックスに指定された数値を yoso に代入する
   let i = document.querySelector('input[name="seisu"]');
-  let a = Integer.parseInt(i.value);
-  let yoso = a; 
+  //let a = Integer.parseInt(i.value);
+  let yoso = i.value; 
   
   // 課題3-1: 正解判定する
   // kotae と yoso が一致するかどうか調べて結果を出力
   // 課題3-1における出力先はコンソール
-  let x = document.querySelector('span#kaisu');
-    x.textContent = kaisu;
-    let y = document.querySelector('span#answer');
-    y.textContent = yoso;
+
   for(; kaisu <= 1; kaisu = kaisu + 1){
     console.log(kaisu + "回目の予想: " + yoso);
+
+    let x = document.querySelector('span#kaisu');
+    let p2 = document.createElement('p');
+    p2.textContent = kaisu;
+    x.insertAdjacentElement('afterend', p);
+    let y = document.querySelector('span#answer');
+    let p3 = document.createElement('p');
+    p3.textContent = yoso;
+    y.insertAdjacentElement('afterend', p);
     
     if(kaisu === 3) continue;
   if(yoso === kotae){
