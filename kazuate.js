@@ -16,7 +16,7 @@ b.addEventListener('click', hantei);
 function hantei() {
   // 将来ここでは 4 ではなくテキストボックスに指定された数値を yoso に代入する
   let i = document.querySelector('input[name="seisu"]');
-  //let a = Integer.parseInt(i.value);
+  let a = Integer.parseInt(i.value);
   let yoso = i.value; 
   
   // 課題3-1: 正解判定する
