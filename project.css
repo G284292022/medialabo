@@ -1,12 +1,11 @@
 h1{
     position: relative;
     text-align: center;
+    padding: 250px;
 }
 p{
     position: relative;
     text-align: center;
-    color: white;
-    background-color: rgb(74, 74, 255);
 }
 
 span{
