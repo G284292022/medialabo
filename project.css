@@ -6,6 +6,7 @@ h1{
 p{
     position: relative;
     text-align: center;
+    height: 100px;
 }
 
 span{
