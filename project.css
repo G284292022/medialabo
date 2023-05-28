@@ -12,12 +12,12 @@ span{
     text-align: center;
 }
 
-label{
+.city{
     position: relative;
     text-align: center;
 }
 
-button{
+.print{
     position: relative;
     text-align: center;
 }
