@@ -12,7 +12,12 @@ span{
     text-align: center;
 }
 
-input{
+label{
+    position: relative;
+    text-align: center;
+}
+
+button{
     position: relative;
     text-align: center;
 }
