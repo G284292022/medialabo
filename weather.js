@@ -238,10 +238,10 @@ function city() {
   else if(a === 'ヨハネスブルク'){
     x.textContent = '都市名: '+ Johannesburg.name +' 緯度: '+ Johannesburg.lon +'° 経度: '+ Johannesburg.lat +'° 天気: '+ Johannesburg.description +' 最低気温: '+ Johannesburg.temp_min +'℃ 最高気温: '+ Johannesburg.temp_max +'℃ 湿度: '+ Johannesburg.humidity +'% 風速: '+ Johannesburg.speed +'m/s 風向:'+ Johannesburg.deg +'° '; 
   }
-  else if(a === '北京市'){
+  else if(a === '北京市' || a === '北京'){
     x.textContent = '都市名: '+ Beijing.name +' 緯度 :'+ Beijing.lon +'° 経度: '+ Beijing.lat +'° 天気: '+ Beijing.description +' 最低気温: '+ Beijing.temp_min +'℃ 最高気温: '+ Beijing.temp_max +'℃ 湿度: '+ Beijing.humidity +'% 風速: '+ Beijing.speed +'m/s 風向: '+ Beijing.deg +'° '; 
   }
-  else if(a === '東京都'){
+  else if(a === '東京都' || a === '東京'){
     x.textContent = '都市名: '+ Tokyo.name +' 緯度: '+ Tokyo.lon +'° 経度: '+ Tokyo.lat +'° 天気: '+ Tokyo.description +' 最低気温: '+ Tokyo.temp_min +'℃ 最高気温: '+ Tokyo.temp_max +'℃ 湿度: '+ Tokyo.humidity +'% 風速: '+ Tokyo.speed +'m/s 風向: '+ Tokyo.deg +'° '; 
   }
   else if(a === 'シンガポール'){
