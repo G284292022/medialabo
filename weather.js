@@ -80,7 +80,7 @@ let LosAngeles =
 ////////// 課題3-2 ここからプログラムを書こう
 
 Cairo = {
-  name: "カイロ",
+  name: "カイロ（エジプト）",
   lon : 31.2497,
   lat: 30.0626,
   description: "晴天",
@@ -92,7 +92,7 @@ Cairo = {
 }
 
 Moscow = {
-  name: "モスクワ",
+  name: "モスクワ（ロシア）",
   lon : 37.6156,
   lat: 55.7522,
   description: "厚い雲",
@@ -103,7 +103,7 @@ Moscow = {
   deg: 272
 }
 Johannesburg = {
-  name: "ヨハネスブルク",
+  name: "ヨハネスブルク（南アフリカ）",
   lon : 28.0436,
   lat: -26.2023,
   description: "雲",
@@ -115,7 +115,7 @@ Johannesburg = {
 }
 
 Beijing = {
-  name: "北京市",
+  name: "北京市（中華人民共和国）",
   lon: 116.3972,
   lat: 39.9075,
   description: "曇りがち", 
@@ -127,7 +127,7 @@ Beijing = {
 }
 
 Tokyo = {
-  name: "東京都",
+  name: "東京都（日本）",
   lon : 139.6917,
   lat: 35.6895,
   description: "曇りがち",
@@ -151,7 +151,7 @@ Singapore = {
 }
 
 Sydney = {
-  name: "シドニー",
+  name: "シドニー（オーストラリア）",
   lon : 151.2073,
   lat: -33.8679,
   description: "小雨",
@@ -163,7 +163,7 @@ Sydney = {
 }
 
 London = {
-  name: "ロンドン",
+  name: "ロンドン（イギリス）",
   lon : -0.1257,
   lat: 51.5085,
   description: "曇りがち",
@@ -175,7 +175,7 @@ London = {
 }
 
 Paris = {
-  name: "パリ",
+  name: "パリ（フランス）",
   lon : 2.3486,
   lat: 48.8534,
   description: "霧",
@@ -187,7 +187,7 @@ Paris = {
 }
 
 RiodeJaneiro = {
-  name: "リオデジャネイロ",
+  name: "リオデジャネイロ（ブラジル）",
   lon : -42.5,
   lat: -22,
   description: "厚い雲",
@@ -199,7 +199,7 @@ RiodeJaneiro = {
 }
 
 NewYork = {
-  name: "ニューヨーク",
+  name: "ニューヨーク（アメリカ合衆国）",
   lon : -74.006,
   lat: 40.7143,
   description: "厚い雲",
@@ -211,7 +211,7 @@ NewYork = {
 }
 
 LosAngeles = {
-  name: "ロサンゼルス",
+  name: "ロサンゼルス（アメリカ合衆国）",
   lon : -118.2437,
   lat: 34.0522,
   description: "雲",
@@ -230,40 +230,40 @@ function city() {
   let a = i.value;
   let x = document.querySelector('span#kensaku');
   if(a === 'カイロ'){
-    x.textContent = '都市名: '+ Cairo.name +' 緯度: '+ Cairo.lon +'° 経度: '+ Cairo.lat +'° 天気: '+ Cairo.description +' 最低気温: '+ Cairo.temp_min +'℃ 最高気温: '+ Cairo.temp_max +'℃ 湿度: '+ Cairo.humidity +'% 風速: '+ Cairo.speed +'m/s 風向: '+ Cairo.deg +'° '; 
+    x.textContent = '都市名(国名): '+ Cairo.name +' 緯度: '+ Cairo.lon +'° 経度: '+ Cairo.lat +'° 天気: '+ Cairo.description +' 最低気温: '+ Cairo.temp_min +'℃ 最高気温: '+ Cairo.temp_max +'℃ 湿度: '+ Cairo.humidity +'% 風速: '+ Cairo.speed +'m/s 風向: '+ Cairo.deg +'° '; 
   }
   else if(a === 'モスクワ'){
-    x.textContent = '都市名: '+ Moscow.name +' 緯度: '+ Moscow.lon +'° 経度: '+ Moscow.lat +'° 天気: '+ Moscow.description +' 最低気温: '+ Moscow.temp_min +'℃ 最高気温: '+ Moscow.temp_max +'℃ 湿度: '+ Moscow.humidity +'% 風速: '+ Moscow.speed +'m/s 風向: '+ Moscow.deg +'° '; 
+    x.textContent = '都市名(国名): '+ Moscow.name +' 緯度: '+ Moscow.lon +'° 経度: '+ Moscow.lat +'° 天気: '+ Moscow.description +' 最低気温: '+ Moscow.temp_min +'℃ 最高気温: '+ Moscow.temp_max +'℃ 湿度: '+ Moscow.humidity +'% 風速: '+ Moscow.speed +'m/s 風向: '+ Moscow.deg +'° '; 
   }
   else if(a === 'ヨハネスブルク'){
-    x.textContent = '都市名: '+ Johannesburg.name +' 緯度: '+ Johannesburg.lon +'° 経度: '+ Johannesburg.lat +'° 天気: '+ Johannesburg.description +' 最低気温: '+ Johannesburg.temp_min +'℃ 最高気温: '+ Johannesburg.temp_max +'℃ 湿度: '+ Johannesburg.humidity +'% 風速: '+ Johannesburg.speed +'m/s 風向:'+ Johannesburg.deg +'° '; 
+    x.textContent = '都市名(国名): '+ Johannesburg.name +' 緯度: '+ Johannesburg.lon +'° 経度: '+ Johannesburg.lat +'° 天気: '+ Johannesburg.description +' 最低気温: '+ Johannesburg.temp_min +'℃ 最高気温: '+ Johannesburg.temp_max +'℃ 湿度: '+ Johannesburg.humidity +'% 風速: '+ Johannesburg.speed +'m/s 風向:'+ Johannesburg.deg +'° '; 
   }
   else if(a === '北京市' || a === '北京'){
-    x.textContent = '都市名: '+ Beijing.name +' 緯度 :'+ Beijing.lon +'° 経度: '+ Beijing.lat +'° 天気: '+ Beijing.description +' 最低気温: '+ Beijing.temp_min +'℃ 最高気温: '+ Beijing.temp_max +'℃ 湿度: '+ Beijing.humidity +'% 風速: '+ Beijing.speed +'m/s 風向: '+ Beijing.deg +'° '; 
+    x.textContent = '都市名(国名): '+ Beijing.name +' 緯度 :'+ Beijing.lon +'° 経度: '+ Beijing.lat +'° 天気: '+ Beijing.description +' 最低気温: '+ Beijing.temp_min +'℃ 最高気温: '+ Beijing.temp_max +'℃ 湿度: '+ Beijing.humidity +'% 風速: '+ Beijing.speed +'m/s 風向: '+ Beijing.deg +'° '; 
   }
   else if(a === '東京都' || a === '東京'){
-    x.textContent = '都市名: '+ Tokyo.name +' 緯度: '+ Tokyo.lon +'° 経度: '+ Tokyo.lat +'° 天気: '+ Tokyo.description +' 最低気温: '+ Tokyo.temp_min +'℃ 最高気温: '+ Tokyo.temp_max +'℃ 湿度: '+ Tokyo.humidity +'% 風速: '+ Tokyo.speed +'m/s 風向: '+ Tokyo.deg +'° '; 
+    x.textContent = '都市名(国名): '+ Tokyo.name +' 緯度: '+ Tokyo.lon +'° 経度: '+ Tokyo.lat +'° 天気: '+ Tokyo.description +' 最低気温: '+ Tokyo.temp_min +'℃ 最高気温: '+ Tokyo.temp_max +'℃ 湿度: '+ Tokyo.humidity +'% 風速: '+ Tokyo.speed +'m/s 風向: '+ Tokyo.deg +'° '; 
   }
   else if(a === 'シンガポール'){
-    x.textContent = '都市名: '+ Singapore.name +' 緯度: '+ Singapore.lon +'° 経度: '+ Singapore.lat +'° 天気: '+ Singapore.description +' 最低気温: '+ Singapore.temp_min +'℃ 最高気温: ' + Singapore.temp_max +'℃ 湿度: '+ Singapore.humidity +'% 風速: '+ Singapore.speed +'m/s 風向: '+ Singapore.deg +'° '; 
+    x.textContent = '都市名(国名): '+ Singapore.name +' 緯度: '+ Singapore.lon +'° 経度: '+ Singapore.lat +'° 天気: '+ Singapore.description +' 最低気温: '+ Singapore.temp_min +'℃ 最高気温: ' + Singapore.temp_max +'℃ 湿度: '+ Singapore.humidity +'% 風速: '+ Singapore.speed +'m/s 風向: '+ Singapore.deg +'° '; 
   }
   else if(a === 'シドニー'){
-    x.textContent = '都市名: '+ Sydney.name +' 緯度: '+ Sydney.lon +'° 経度: '+ Sydney.lat +'° 天気: '+ Sydney.description +' 最低気温: '+ Sydney.temp_min +'℃ 最高気温: '+ Sydney.temp_max +'℃ 湿度: '+ Sydney.humidity +'% 風速: '+ Sydney.speed +'m/s 風向: '+ Sydney.deg +'° '; 
+    x.textContent = '都市名(国名): '+ Sydney.name +' 緯度: '+ Sydney.lon +'° 経度: '+ Sydney.lat +'° 天気: '+ Sydney.description +' 最低気温: '+ Sydney.temp_min +'℃ 最高気温: '+ Sydney.temp_max +'℃ 湿度: '+ Sydney.humidity +'% 風速: '+ Sydney.speed +'m/s 風向: '+ Sydney.deg +'° '; 
   }
   else if(a === 'ロンドン'){
-    x.textContent = '都市名: '+ London.name +' 緯度: '+ London.lon +'° 経度: '+ London.lat +'° 天気: '+ London.description +' 最低気温: '+ London.temp_min +'℃ 最高気温: '+ London.temp_max +'℃ 湿度: '+ London.humidity +'% 風速: '+ London.speed +'m/s 風向: '+ London.deg +'° '; 
+    x.textContent = '都市名(国名): '+ London.name +' 緯度: '+ London.lon +'° 経度: '+ London.lat +'° 天気: '+ London.description +' 最低気温: '+ London.temp_min +'℃ 最高気温: '+ London.temp_max +'℃ 湿度: '+ London.humidity +'% 風速: '+ London.speed +'m/s 風向: '+ London.deg +'° '; 
   }
   else if(a === 'パリ'){
-    x.textContent = '都市名: '+ Paris.name +' 緯度: '+ Paris.lon +'° 経度: '+ Paris.lat +'° 天気: '+ Paris.description +' 最低気温: '+ Paris.temp_min +'℃ 最高気温: '+ Paris.temp_max +'℃ 湿度: '+ Paris.humidity +'% 風速: '+ Paris.speed +'m/s 風向: '+ Paris.deg +'° '; 
+    x.textContent = '都市名(国名): '+ Paris.name +' 緯度: '+ Paris.lon +'° 経度: '+ Paris.lat +'° 天気: '+ Paris.description +' 最低気温: '+ Paris.temp_min +'℃ 最高気温: '+ Paris.temp_max +'℃ 湿度: '+ Paris.humidity +'% 風速: '+ Paris.speed +'m/s 風向: '+ Paris.deg +'° '; 
   }
   else if(a === 'リオデジャネイロ'){
-    x.textContent = '都市名: '+ RiodeJaneiro.name +' 緯度: '+ RiodeJaneiro.lon +'° 経度: '+ RiodeJaneiro.lat +'° 天気: '+ RiodeJaneiro.description +' 最低気温: '+ RiodeJaneiro.temp_min +'℃ 最高気温: '+ RiodeJaneiro.temp_max +'℃ 湿度: '+ RiodeJaneiro.humidity +'% 風速: '+ RiodeJaneiro.speed +'m/s 風向: '+ RiodeJaneiro.deg +'° '; 
+    x.textContent = '都市名(国名): '+ RiodeJaneiro.name +' 緯度: '+ RiodeJaneiro.lon +'° 経度: '+ RiodeJaneiro.lat +'° 天気: '+ RiodeJaneiro.description +' 最低気温: '+ RiodeJaneiro.temp_min +'℃ 最高気温: '+ RiodeJaneiro.temp_max +'℃ 湿度: '+ RiodeJaneiro.humidity +'% 風速: '+ RiodeJaneiro.speed +'m/s 風向: '+ RiodeJaneiro.deg +'° '; 
   }
   else if(a === 'ニューヨーク'){
-    x.textContent = '都市名: '+ NewYork.name +' 緯度: '+ NewYork.lon +'° 経度: '+ NewYork.lat +'° 天気: '+ NewYork.description +' 最低気温: '+ NewYork.temp_min +'℃ 最高気温: '+ NewYork.temp_max +'℃ 湿度: '+ NewYork.humidity +'% 風速: '+ NewYork.speed +'m/s 風向: '+ NewYork.deg +'° '; 
+    x.textContent = '都市名(国名): '+ NewYork.name +' 緯度: '+ NewYork.lon +'° 経度: '+ NewYork.lat +'° 天気: '+ NewYork.description +' 最低気温: '+ NewYork.temp_min +'℃ 最高気温: '+ NewYork.temp_max +'℃ 湿度: '+ NewYork.humidity +'% 風速: '+ NewYork.speed +'m/s 風向: '+ NewYork.deg +'° '; 
   }
   else if(a === 'ロサンゼルス'){
-    x.textContent = '都市名: '+ LosAngeles.name +' 緯度: '+ LosAngeles.lon +'° 経度: '+ LosAngeles.lat +'° 天気: '+ LosAngeles.description +' 最低気温: '+ LosAngeles.temp_min +'℃ 最高気温: '+ LosAngeles.temp_max +'℃ 湿度: '+ LosAngeles.humidity +'% 風速: '+ LosAngeles.speed +'m/s 風向: '+ LosAngeles.deg +'° '; 
+    x.textContent = '都市名(国名): '+ LosAngeles.name +' 緯度: '+ LosAngeles.lon +'° 経度: '+ LosAngeles.lat +'° 天気: '+ LosAngeles.description +' 最低気温: '+ LosAngeles.temp_min +'℃ 最高気温: '+ LosAngeles.temp_max +'℃ 湿度: '+ LosAngeles.humidity +'% 風速: '+ LosAngeles.speed +'m/s 風向: '+ LosAngeles.deg +'° '; 
   }
   else{
     x.textContent = '正しく入力してください。';
