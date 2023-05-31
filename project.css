@@ -1,5 +1,5 @@
 body{
-    background-image: url(img/sky_00165.png);
+    background-image: url(sky_00165.png);
 }
 
 h1{
@@ -10,7 +10,9 @@ h1{
 p{
     position: relative;
     text-align: center;
-    height: 100px;
+    background: linear-gradient(90deg, rgb(119, 210, 255), rgb(173, 232, 255));;
+    width: 1200px;
+    left: 120px;
 }
 
 span{
