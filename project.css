@@ -13,6 +13,7 @@ p{
     background: linear-gradient(90deg, rgb(119, 169, 255), rgb(173, 232, 255));;
     width: 1200px;
     left: 120px;
+    padding: 20px;
 }
 
 span{
