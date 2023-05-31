@@ -30,6 +30,14 @@ li{
     position: relative;
     text-align: center;
 }
+ul {
+    background: linear-gradient(90deg, rgb(206, 255, 206), rgb(255, 255, 141));
+    border: solid green;
+    padding: 10px;
+    width: 1150px;
+    left: 100px;
+    position: relative;
+}
 
 .one{
     text-shadow: 0.02em  -0.02em 0.2em red;
