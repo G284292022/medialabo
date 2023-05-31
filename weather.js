@@ -80,7 +80,7 @@ let LosAngeles =
 ////////// 課題3-2 ここからプログラムを書こう
 
 Cairo = {
-  name: "カイロ（エジプト）",
+  name: "カイロ(エジプト)",
   lon : 31.2497,
   lat: 30.0626,
   description: "晴天",
@@ -92,7 +92,7 @@ Cairo = {
 }
 
 Moscow = {
-  name: "モスクワ（ロシア）",
+  name: "モスクワ(ロシア)",
   lon : 37.6156,
   lat: 55.7522,
   description: "厚い雲",
@@ -103,7 +103,7 @@ Moscow = {
   deg: 272
 }
 Johannesburg = {
-  name: "ヨハネスブルク（南アフリカ）",
+  name: "ヨハネスブルク(南アフリカ)",
   lon : 28.0436,
   lat: -26.2023,
   description: "雲",
@@ -115,7 +115,7 @@ Johannesburg = {
 }
 
 Beijing = {
-  name: "北京市（中華人民共和国）",
+  name: "北京市(中華人民共和国)",
   lon: 116.3972,
   lat: 39.9075,
   description: "曇りがち", 
@@ -127,7 +127,7 @@ Beijing = {
 }
 
 Tokyo = {
-  name: "東京都（日本）",
+  name: "東京都(日本)",
   lon : 139.6917,
   lat: 35.6895,
   description: "曇りがち",
@@ -151,7 +151,7 @@ Singapore = {
 }
 
 Sydney = {
-  name: "シドニー（オーストラリア）",
+  name: "シドニー(オーストラリア)",
   lon : 151.2073,
   lat: -33.8679,
   description: "小雨",
@@ -163,7 +163,7 @@ Sydney = {
 }
 
 London = {
-  name: "ロンドン（イギリス）",
+  name: "ロンドン(イギリス)",
   lon : -0.1257,
   lat: 51.5085,
   description: "曇りがち",
@@ -175,7 +175,7 @@ London = {
 }
 
 Paris = {
-  name: "パリ（フランス）",
+  name: "パリ(フランス)",
   lon : 2.3486,
   lat: 48.8534,
   description: "霧",
@@ -187,7 +187,7 @@ Paris = {
 }
 
 RiodeJaneiro = {
-  name: "リオデジャネイロ（ブラジル）",
+  name: "リオデジャネイロ(ブラジル)",
   lon : -42.5,
   lat: -22,
   description: "厚い雲",
@@ -199,7 +199,7 @@ RiodeJaneiro = {
 }
 
 NewYork = {
-  name: "ニューヨーク（アメリカ合衆国）",
+  name: "ニューヨーク(アメリカ合衆国)",
   lon : -74.006,
   lat: 40.7143,
   description: "厚い雲",
@@ -211,7 +211,7 @@ NewYork = {
 }
 
 LosAngeles = {
-  name: "ロサンゼルス（アメリカ合衆国）",
+  name: "ロサンゼルス(アメリカ合衆国)",
   lon : -118.2437,
   lat: 34.0522,
   description: "雲",
@@ -245,7 +245,7 @@ function city() {
     x.textContent = '都市名(国名): '+ Tokyo.name +' 緯度: '+ Tokyo.lon +'° 経度: '+ Tokyo.lat +'° 天気: '+ Tokyo.description +' 最低気温: '+ Tokyo.temp_min +'℃ 最高気温: '+ Tokyo.temp_max +'℃ 湿度: '+ Tokyo.humidity +'% 風速: '+ Tokyo.speed +'m/s 風向: '+ Tokyo.deg +'° '; 
   }
   else if(a === 'シンガポール'){
-    x.textContent = '都市名(国名): '+ Singapore.name +' 緯度: '+ Singapore.lon +'° 経度: '+ Singapore.lat +'° 天気: '+ Singapore.description +' 最低気温: '+ Singapore.temp_min +'℃ 最高気温: ' + Singapore.temp_max +'℃ 湿度: '+ Singapore.humidity +'% 風速: '+ Singapore.speed +'m/s 風向: '+ Singapore.deg +'° '; 
+    x.textContent = '国名: '+ Singapore.name +' 緯度: '+ Singapore.lon +'° 経度: '+ Singapore.lat +'° 天気: '+ Singapore.description +' 最低気温: '+ Singapore.temp_min +'℃ 最高気温: ' + Singapore.temp_max +'℃ 湿度: '+ Singapore.humidity +'% 風速: '+ Singapore.speed +'m/s 風向: '+ Singapore.deg +'° '; 
   }
   else if(a === 'シドニー'){
     x.textContent = '都市名(国名): '+ Sydney.name +' 緯度: '+ Sydney.lon +'° 経度: '+ Sydney.lat +'° 天気: '+ Sydney.description +' 最低気温: '+ Sydney.temp_min +'℃ 最高気温: '+ Sydney.temp_max +'℃ 湿度: '+ Sydney.humidity +'% 風速: '+ Sydney.speed +'m/s 風向: '+ Sydney.deg +'° '; 
