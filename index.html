@@ -72,5 +72,27 @@
         <li><a href="https://g284292022.github.io/medialabo/practice-event/event-intro.html">演習5-2のHTMLファイル</a></li>
         <li><a href="https://g284292022.github.io/medialabo/practice-event/event-list.html">演習5-3のHTMLファイル</a></li>
       </ul>
+      <p>
+        こだわりは個人的に文字が左よりになることが気に入らなかったのと「left;」だとlistタグの●が動かないので、<br>
+        「position: relative;text-align: center;」で真ん中に寄せました。<br>
+        プロジェクト課題では都市の名前を入力したらその都市のIDを参照先のURLにある値に代入してデータを表示させるようにしました。<br>
+        例えば東京と入力したらif文で(a === '東京’){b = 1850147;} 'http…'+ b + '.json';となるようにしました。<br>
+        あと、個性を出す為にpng画像を背景に表示させました。<br>
+        最初はjpegで加えましたが、表示されなかったのでpngに変換したら表示させることができました。<br>
+        苦心点は演習2-3のh1(タイトル名)とh2(Chromeやsafarinなどの部分)で、<br>
+        h1のtext-shadow:で手本通りの太さをにすることとh2はbackground: のlinear-gradientで向きが未設定だと上下に色が変わります。<br>
+        これを90度(90deg)回転させることによって左右に色が変わります。これはindexの説明部分の背景やプロジェクト課題に活かしました。<br>
+        演習3-6の日本語の学科名をfor文で表示させることです。 <br>
+        gakkaの中のnameを順番に表示させるにはgakkaの配列[a]と置くことで4学科表示させることができました。<br>
+        (let a of gakka){console.log(a.name)}<br>
+        演習4-3の画像を表示させる練習でfor文で表示させたときに花子が3つ表示されてしまい悩んでいましたが、<br>
+        配列を3つ作って太郎、次郎、花子をそれぞれ代入して表示はできましたがafterendで表示すると順番が逆になってしまったので<br>
+         0 = 花子, 2 = 太郎　に変えてみたら順番通りに表示できました。(let ms = [1,2,3]; ms[0] = 'hanako.png';)<br>
+         数当てゲーム第3,4回でコンソールの方で表示していたでfor文で書いていましたが、<br>
+         第5回で入力を習ったのでif文で3回目まで答えられなかったら「残念答えは…」<br>
+         の部分を表示させるために回数が3回まででまだ答えを当てられなかった場合(kaisu === 3 &&  yoso !== kotae)を付け加えました。<br>
+         プロジェクト課題では天気を表示させることに苦戦しました。<br>
+         weatherの配列が一つしかなかったのでdata.weather[0].descriptionと書いてみたら表示できました。
+      </p>
   </body>
 </html>
